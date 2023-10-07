@@ -15,7 +15,7 @@ SECRET_KEY = 'EAAVdbBTC93UBOx6kTdDoZCq2aKuXU615nmgqTg7tU1DQVSozyWb1XrCrN3iv0rFeZ
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','message.skolo.online','invofashion.com','0.0.0.0']
+ALLOWED_HOSTS = ['localhost','message.skolo.online','invofashion.com','0.0.0.0','127.0.0.1','*']
 
 
 # Application definition
@@ -48,7 +48,7 @@ ROOT_URLCONF = 'message.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR,'business/templates/business')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
